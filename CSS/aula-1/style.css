@@ -1,0 +1,44 @@
+
+/* Seletor é a configuração que indica o elemento de estilo */
+h1 {
+  /* sintaxe: propriedade: valor ; */
+  color: goldenrod;
+  font-size: 100px;
+}
+
+p {
+  color: blue;
+}
+
+strong, em {
+  color: red;
+}
+
+/* Para definir qual imagem vai estilizar, colocar o local aonde a imagem está + espaço + o elemento */
+
+p img {
+  border-radius: 100px;
+}
+
+section p {
+  color: green;
+}
+
+/* No CSS para identificar os elementos, usar id ou classe:
+atributo id não se repete no html, para um unico elemento
+atributo class se repete no html, usar para grupos de elementos */
+
+#tit-1 {
+  font-size: 60px;
+}
+
+#tit-2 {
+  font-size: 40px;
+}
+
+/* Para se referir a uma classe .nome da classe */
+
+.cor-blue {
+  color: darkblue;
+}
+

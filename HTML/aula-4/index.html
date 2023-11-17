@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <!-- * tag HEADER é o cabeçalho da página, em geral contém listas de links, que seria o menu de navegação. Todo site deve ser navegavél, ou seja, sempre voltar para a ágina HOME
+  *Dentro do header contém a tag NAV paga o menu 
+  *tag A para inserir link de navegação, colocar atributo target="_blank" para abrir o link em nova guia
+  *Tag MAIN contém o assunto principal da página
+  *Tag FOOTER rodapé
+  *TAG section para criar sessão da pagina
+  *Tag FORM para criar formulário
+  *Tag INPUT para entrada de dados, já vem com atributo TYPE, é uma tag inline não quebra linha, colocar atributo id="" para vincular o campo com a label
+  *TAG BR quebra de linha, mas deve ser evitada porque isso deve ser feito com CSS
+  *tag LABEL para rotular, vincular o campo com o rótulo, colocar atributo id="" para vincular
+  *atributo id="" é global, pode usar para qualquer TAG
+  *atributo name="" usa para marcar só uma opção
+  *tag TEXTAREA para inserir texto
+  *tag select para inlcuir opçõe, colocar tag OPTION dentro
+  *tag BUTTON cria botão para envio de dados, porém só envia os dados das labels com atributo name=""
+  *atributo value="" para rótulo iniciar com valor padrão
+  * atributo min="" especifica valor mínimo, max="" valor máximo, para label NUMBER
+  * atributo REQUIRED para definir campos obrigatórios, recebe valor lógico, mas só colocando o nome sem ="" já entende que é obrigatório
+  *atributo DISABLED para desabilitar o campo
+  *atributo PLACEHOLDER para colocar texto indicativo do que preencher no campo
+-->
+
+  <!-- Cabeçalho da Página -->
+  <header>
+    <h1>Home</h1>
+
+    <!-- Menu de navegação  -->
+    <nav>
+      <a href="https://www.google.com" target="_blank">Google</a>
+      <a href="https://www.soulcode.com" target="_blank">SoulCode</a>
+      <a href="./login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+  <!-- Subsessão 1 -->
+    <section>
+      <h2>Sobre este site</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deleniti autem sapiente nulla inventore natus maiores blanditiis facere eligendi aliquid soluta, quidem laboriosam doloribus adipisci ab, aut eaque, sunt eos?</p>
+  </section>
+
+<!-- Subsessão 2 -->
+<section>
+  <h2>Depoimentos</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero dolor delectus modi distinctio porro, iure provident cumque architecto atque, quam molestias exercitationem quas ipsum voluptate qui, rem excepturi labore fugit.</p>
+</section>
+
+<!-- Formulário da página-->
+<section>
+  <h2>Formulário</h2>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="Seu Nome"> <br>
+
+    <label for="data">Data:</label> 
+    <input type="date" id="data" name="data"> <br>
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" disabled> <br>
+
+    <label for="email">E-mail*:</label>
+    <input type="email" id="email" name="email" required="true"> <br>
+
+    <label for="senha">Senha*:</label>
+    <input type="password" id="senha" name="senha" required> <br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(xx)999999999"> <br>
+
+    <label for="numero">Número:</label>
+    <input type="number" id="numero" name="numero" min="0" max="130"> <br>
+
+    <label for="opcao1">Opção 1</label>
+    <input type="radio" id="opcao1" name="opcao">
+    <label for="opcao2">Opção 2</label>
+    <input type="radio" id="opcao2" name="opcao"> <br>
+
+    <label for="marcar">Marcar</label>
+    <input type="checkbox" id="marcar" name="marcar"> <br>
+
+    <label for="texto">Texto:</label>
+    <textarea id="texto" name="texto"></textarea> <br>
+
+    <label for="selecao">Seleção:</label>
+    <select id="selecao" name="selecao">
+      <option value="">Seleção 1</option>
+      <option value="">Seleção 2</option>
+    </select> <br>
+
+    <button>Enviar</button>
+
+  </form>
+
+</section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p> SoulCode.com todos os direitos reservados</p>
+  </footer>
+  
+</body>
+</html>

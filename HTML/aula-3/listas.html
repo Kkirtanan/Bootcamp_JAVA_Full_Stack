@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Formatação em CSS -->
+  <!-- cria um seletor, que é uma variavel e dá a formatação pra ela -->
+  <style>
+    .circulo{
+      list-style-type:circle;
+    }
+    .quadrado{
+      list-style-type: square;
+    }
+    .romano{
+      list-style-type: upper-roman;
+    }
+    .minusculas{
+      list-style-type: lower-alpha;
+    }
+    .maisculas{
+      list-style-type: upper-alpha;
+    }
+  </style>
+
+
+</head>
+<body>
+  <!-- Item da lista LI -->
+  <!-- Lista ordenada:  -->
+
+  <ol class="maisculas">
+    <li>item 1</li>
+    <li><ol class="minusculas">
+      <li>novo item1</li>
+      <li>novo item2</li>
+    </ol></li>
+    <li>item 3</li>
+  </ol>
+
+  <!-- Lista não ordenada: não seguem ordem especifica, criados com a tag UL -->
+
+  <ul>
+    <li>item 1</li>
+    <li>
+      <ul>
+        <li>novo item</li>
+        <li><ul>
+          <li>Novo item</li>
+        </ul></li>
+      </ul>
+    </li>
+    <li>item 3</li>
+  </ul>
+
+  <!-- Listas de definição, EXEMPLO DICIONÁRIO
+    <dl> para definir a lista
+    <dt> termos em negrito
+    <dd> definição dos termos  -->
+
+  <dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criar páginas web</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem para estilizar elementos HTML</dd>
+  </dl>
+</body>
+</html>
