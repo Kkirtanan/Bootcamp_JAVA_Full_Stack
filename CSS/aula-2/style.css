@@ -1,0 +1,77 @@
+p {
+  /* cor pelo nome
+  color: red;
+  /* cor por hexadecimal */
+  /* color: #ffa500; */
+  /* RGB */
+  /* color: rgb(red, green, blue) */
+  /* RGBA */
+  /* color: rgba(red, green, blue, alpha) */
+  color: red;
+  background-color: rgba(0,0,255,0.5);
+  /* Colocar familia de fontes, se não tiver uma disponivel, usa a outra */
+  font-family:'Times New Roman', Times, serif
+  font-size: 100px;
+  border: none;
+}
+
+.destaque {
+  color: goldenrod;
+  background-color: chocolate;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#depoimentos {
+  color: black;
+  background-color: white;
+  font-size: 30px;
+}
+
+input[type="text"]{
+  width: 300px;
+  border-radius: 20px;
+  height: 30px;
+}
+
+input[type="checkbox"]{
+  height: 10px;
+  transform: scale(5);
+}
+
+div p{
+  color: bisque;
+  background-color: darkmagenta;
+  font-size: 20px;
+}
+
+h2 + p{
+  font-style: italic;
+}
+
+h2 + p + p{
+  font-style: italic;
+  color: blue;
+}
+
+* {
+  border: 1px solid black;
+}
+
+body {
+  border: none;
+}
+
+a:hover{
+  text-decoration: none;
+  border: none;
+  color: white;
+background-color: black;
+}
+
+p::first-line{
+  font-weight: bold;
+}
+

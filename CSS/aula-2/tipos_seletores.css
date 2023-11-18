@@ -1,0 +1,38 @@
+/* Seletores em CSS
+/* Seletores de elemento: */
+p {
+}
+
+/* Seletores de classe */
+classe {
+}
+
+/* Seletores de id */
+id {
+}
+
+/* Seletor de atributo */
+input [type="text"] {
+}
+
+/* Seletores de descendência */
+div p {
+}
+
+/* Seletores de adjascência */
+/* formatação vai se aplicar somente ao que estiver após o elemento indicado */
+h2 + p {
+}
+
+/* Seletores universais */
+/* tudo que estiver dentro do documento html */
+* {
+}
+
+/* Seletores pseudo-calsses e pseudo-elemento */
+classe: a:hover {
+}
+
+elemento: p ::first-line {
+
+} */
