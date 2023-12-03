@@ -7,45 +7,29 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+  <div id="header">
   <h1>Adicione uma tarefa</h1>
+  </div>
 
-  <section>
-
-  <div id="addtarefa">
-    <form >
-      <label for="titulo">Título da tarefa*:</label>
-      <input type="text" id="titulo" name="titulo" required> <br>
-
-      <label for="data">Data*:</label> 
-      <input type="date" id="data" name="data" required> <br>
-  
-      <label for="hora">Hora*:</label>
-      <input type="time" id="hora" name="hora" required> <br>
-
-      <label for="texto">Descrição da tarefa:</label>
-      <textarea id="texto" name="texto"></textarea> <br>
-
-      <button id="btn1">Adicionar tarefa</button> <br>
-    </form>
-  </div>  
-
-  </section>
+  <div class="addTask">
+    <div id="newtask">
+        <input type="text" placeholder="Informe uma tarefa">
+        <button id="push">Adicionar</button>
+    </div>
+    <div id="tasks"></div>
+</div>
 
 
-  <section>
-    <ul id="lista"></ul>
-    <label id="situacao"></label>
-    <button id="btn2"></button>
-  </section>
+
+
+
+
+
 
   <script src="./script.js"></script>
 
-
-
-
-
-  <footer>
-    <p> Kely Kirtanan DEV todos os direitos reservados</p>
-  </footer>
 </body>
 </html>
+
+

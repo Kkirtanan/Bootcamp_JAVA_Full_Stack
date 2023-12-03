@@ -1,35 +1,25 @@
 
-const addtarefa = document.querySelector("#addtarefa");
+document.querySelector('#push').onclick = function(){
+  if(document.querySelector('#newtask input').value.length == 0){
+      alert("Informe a tarefa!")
+  }
+  else{
+      document.querySelector('#tasks').innerHTML += `
+          <div class="list">
+              <span id="taskname">
+                  ${document.querySelector('#newtask input').value}
+              </span>
+              <input type="checkbox" id="completed" name="completed" value="concluido">
+              <label for="completed"> Concluído</label>
+              <button class="delete" style='font-size:12px'>Apagar <i class='fas fa-trash-alt' style='font-size:12px'></i></button>
+          </div>
+      `;
 
-addtarefa.addEventListener("submit", function(event) {
-  event.preventDefault();
-  console.log(event);
-}
-);
-
-let titulo = document.getElementById("titulo");
-let data = document.getElementById("data");
-let hora = document.getElementById("hora");
-let texto = document.getElementById("texto");
-
-let lista = document.querySelector("#lista");
-let situacao = document.querySelector("#situacao");
-const btn2 = document.querySelector("#btn2");
-
-const tarefas = [ 
-  {titulo: titulo.innerText, data: data.innerText, hora: hora.innerText, texto: texto.innerText}
-]
-
-function rendertarefa () {
-  lista.innerHTML = " "
-  for (let tarefa of tarefas) {
-    lista.innerHTML += `<li>${tarefa.titulo} ${tarefa.data} ${tarefa.hora}</li>
-    <li> ${tarefa.texto}</li>`;
-    console.log(situacao);
-    console.log(btn2);
+      var current_tasks = document.querySelectorAll(".delete");
+      for(var i=0; i<current_tasks.length; i++){
+          current_tasks[i].onclick = function(){
+              this.parentNode.remove();
+          }
+      }
   }
 }
-
-rendertarefa ();
-
-
